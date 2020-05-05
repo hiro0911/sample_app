@@ -10,10 +10,13 @@ class TodolistsController < ApplicationController
         # トップ画面へリダイレクト
       redirect_to '/top'
   end
+  def index
+
+  end
   private
-   
+
   def list_params
       params.require(:list).permit(:title, :body)
   end
-  
+
 end
